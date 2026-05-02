@@ -1,5 +1,5 @@
-import { Component, input } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, inject, input } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'mia-navigation-link',
@@ -8,12 +8,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navigation-link.component.css',
 })
 export class NavigationLinkComponent {
-  // Signal input for the link label
+  private router = inject(Router);
+
   name = input<string>();
 
-  // Optional: route path derived from name
-  // You can replace this with a proper input if needed
-  get route(): string {
-    return `/${this.name()?.toLowerCase() ?? ''}`;
+  protected navigate(): void {
+    this.router.navigateByUrl(`/${this.name()?.toLowerCase() ?? ''}`);
   }
 }

@@ -3,5 +3,7 @@
   align-items: center;
   justify-content: space-between;
   border: 1px solid black;
-  flex: 2;
+  flex: 1;
+  padding-left: var(--spacing-sm);
+  padding-right: var(--spacing-sm);
 }

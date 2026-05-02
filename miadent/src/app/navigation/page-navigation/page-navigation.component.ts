@@ -7,4 +7,6 @@ import { NavigationLinkComponent } from '../navigation-link/navigation-link.comp
   templateUrl: './page-navigation.component.html',
   styleUrl: './page-navigation.component.css',
 })
-export class PageNavigationComponent {}
+export class PageNavigationComponent {
+  protected links = ['Home', 'Services', 'Contact Me'];
+}

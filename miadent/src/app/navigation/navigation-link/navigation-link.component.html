@@ -1,8 +1,3 @@
-<a
-  class="navigation-link"
-  [routerLink]="route"
-  routerLinkActive="active"
-  [routerLinkActiveOptions]="{ exact: true }"
->
+<a class="navigation-link" (click)="navigate()">
   {{ name() }}
 </a>

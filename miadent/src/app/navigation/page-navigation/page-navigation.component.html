@@ -1,5 +1,5 @@
 <div class="page-navigation-container">
-  <mia-navigation-link name="Home" />
-  <mia-navigation-link name="Services" />
-  <mia-navigation-link name="Contact Me" />
+  @for (link of links; track link) {
+    <mia-navigation-link [name]="link" />
+  }
 </div>

@@ -1,13 +1,11 @@
 .navigation-link {
   display: inline-flex;
   align-items: center;
-
   text-decoration: none;
   color: var(--color-text);
-
   font-weight: 500;
-
   border-radius: var(--radius-md);
+  flex: 1;
 
   transition:
     background-color 150ms ease-in-out,
