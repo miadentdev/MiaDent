@@ -10,16 +10,8 @@ import { NavigationLinkComponent } from '../navigation-link/navigation-link.comp
 export class PageNavigationComponent {
   protected links = [
     { slug: 'home', label: 'Home' },
+    { slug: 'about', label: 'About' },
     { slug: 'services', label: 'Services' },
-    { slug: 'contact', label: 'Contact Me' },
-    { slug: 'about', label: 'About Me' },
-    { slug: 'about', label: 'About Me' },
-    { slug: 'about', label: 'About Me' },
-    { slug: 'about', label: 'About Me' },
-
-    { slug: 'about', label: 'About Me' },
-    { slug: 'about', label: 'About Me' },
-    { slug: 'about', label: 'About Me' },
-    { slug: 'about', label: 'About Me' },
+    { slug: 'contact', label: 'Contact' },
   ];
 }
