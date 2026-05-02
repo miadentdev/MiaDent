@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  border: 1px solid black;
   flex: 1;
   padding-right: var(--spacing-sm);
   gap: var(--spacing-md);

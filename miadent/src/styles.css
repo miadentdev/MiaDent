@@ -415,15 +415,14 @@ h4 {
 }
 
 .button-outline {
-  border-color: var(--color-border);
+  border-color: transparent;
   background-color: transparent;
   color: var(--color-text);
 }
 
 .button-outline:hover:not(:disabled) {
-  background-color: #f8fafc;
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  background-color: #cbd5e1;
+  color: var(--color-text);
 }
 
 .button-danger {

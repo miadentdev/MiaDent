@@ -3,17 +3,88 @@
   <button class="button button-primary">Request an Appointment</button>
   @if (isBulgarian()) {
     <button
-      class="button button-secondary"
+      class="button button-secondary button-flag"
       (click)="translateToEnglish()"
+      aria-label="Switch to English"
+      title="Switch to English"
     >
+      <svg
+        class="flag-icon"
+        viewBox="0 0 60 30"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <clipPath id="uk-clip">
+          <path d="M0,0 v30 h60 v-30 z" />
+        </clipPath>
+        <clipPath id="uk-clip-diagonals">
+          <path
+            d="M30,15 L60,30 L60,27 L34,15 L60,3 L60,0 L57,0 L30,12 L3,0 L0,0 L0,3 L26,15 L0,27 L0,30 L3,30 z"
+          />
+        </clipPath>
+        <g clip-path="url(#uk-clip)">
+          <path
+            d="M0,0 v30 h60 v-30 z"
+            fill="#012169"
+          />
+          <path
+            d="M0,0 L60,30 M60,0 L0,30"
+            stroke="#fff"
+            stroke-width="6"
+          />
+          <path
+            d="M0,0 L60,30 M60,0 L0,30"
+            clip-path="url(#uk-clip-diagonals)"
+            stroke="#C8102E"
+            stroke-width="4"
+          />
+          <path
+            d="M30,0 v30 M0,15 h60"
+            stroke="#fff"
+            stroke-width="10"
+          />
+          <path
+            d="M30,0 v30 M0,15 h60"
+            stroke="#C8102E"
+            stroke-width="6"
+          />
+        </g>
+      </svg>
       English
     </button>
   }
   @if (isEnEnglish()) {
     <button
-      class="button button-secondary"
+      class="button button-secondary button-flag"
       (click)="translateToBulgarian()"
+      aria-label="Switch to Bulgarian"
+      title="Switch to Bulgarian"
     >
+      <svg
+        class="flag-icon"
+        viewBox="0 0 60 30"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <rect
+          width="60"
+          height="10"
+          y="0"
+          fill="#fff"
+        />
+        <rect
+          width="60"
+          height="10"
+          y="10"
+          fill="#00966E"
+        />
+        <rect
+          width="60"
+          height="10"
+          y="20"
+          fill="#D62612"
+        />
+      </svg>
       Bulgarian
     </button>
   }

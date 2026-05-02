@@ -17,6 +17,7 @@ export class HeaderButtonsComponent {
   protected isBulgarian(): boolean {
     return this.currentLanguage === Language.Bulgarian;
   }
+
   protected translateToBulgarian() {
     // This is a placeholder function. You can implement the actual translation logic here.
     alert('This will translate the content to Bulgarian!');
