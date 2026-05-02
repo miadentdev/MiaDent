@@ -10,9 +10,9 @@ import { NavigationLinkComponent } from '../navigation-link/navigation-link.comp
 })
 export class PageNavigationComponent {
   protected readonly links: NavigationLink[] = [
-    { slug: 'home', label: 'Home' },
-    { slug: 'about', label: 'About' },
-    { slug: 'services', label: 'Services' },
-    { slug: 'contact', label: 'Contact' },
+    { slug: 'home', label: 'navigation.home' },
+    { slug: 'about', label: 'navigation.about' },
+    { slug: 'services', label: 'navigation.services' },
+    { slug: 'contact', label: 'navigation.contact' },
   ];
 }

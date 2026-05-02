@@ -1,8 +1,9 @@
-import { Injectable, computed, inject } from '@angular/core';
+import { Injectable, Signal, computed, inject } from '@angular/core';
 import { Store } from '@ngrx/store';
 
+import { selectCurrentLanguage } from '../../store/settings/settings.feature';
 import { Language } from '../enums/language.enum';
-
+import { TranslationModel } from '../models/translation.model';
 import { bgTranslation } from '../translations/bg.translations';
 import { enTranslation } from '../translations/en.translation';
 
@@ -10,30 +11,32 @@ import { enTranslation } from '../translations/en.translation';
   providedIn: 'root',
 })
 export class TranslationService {
-  private readonly store = inject(Store);
+  private readonly store: Store = inject(Store);
 
-  private readonly currentLanguage = this.store.selectSignal<Language>(
-    (state) => state.settings.currentLanguage,
-  );
+  private readonly currentLanguage: Signal<Language> =
+    this.store.selectSignal(selectCurrentLanguage);
 
-  private readonly translations = {
+  private readonly translations: Record<Language, TranslationModel> = {
     [Language.English]: enTranslation,
     [Language.Bulgarian]: bgTranslation,
   };
 
-  private readonly currentTranslations = computed(() => {
-    return this.translations[this.currentLanguage()];
-  });
+  private readonly currentTranslations: Signal<TranslationModel> = computed(
+    (): TranslationModel => this.translations[this.currentLanguage()],
+  );
 
   public translate(path: string): string {
-    const keys = path.split('.');
-
-    let value: any = this.currentTranslations();
+    const keys: string[] = path.split('.');
+    let value: unknown = this.currentTranslations();
 
     for (const key of keys) {
-      value = value?.[key];
+      if (value !== null && typeof value === 'object' && key in value) {
+        value = (value as Record<string, unknown>)[key];
+      } else {
+        return path;
+      }
     }
 
-    return value ?? path;
+    return typeof value === 'string' ? value : path;
   }
 }

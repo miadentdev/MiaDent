@@ -8,7 +8,7 @@ import { TranslationService } from '../services/translation.service';
   pure: false,
 })
 export class TranslatePipe implements PipeTransform {
-  private readonly translationService = inject(TranslationService);
+  private readonly translationService: TranslationService = inject(TranslationService);
 
   public transform(key: string): string {
     return this.translationService.translate(key);

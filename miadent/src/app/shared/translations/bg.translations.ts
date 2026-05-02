@@ -1,10 +1,10 @@
-import { TranslationModel } from '../models/translation.mode';
+import { TranslationModel } from '../models/translation.model';
 
 export const bgTranslation: TranslationModel = {
   common: {
     requestAnAppointment: 'Запази час',
     contact: 'Контакти',
-    translateToEnglish: 'Английски',
+    translateToEnglish: 'English',
     translateToBulgarian: 'Български',
   },
 

@@ -3,14 +3,14 @@ import { provideRouter } from '@angular/router';
 import { provideStore } from '@ngrx/store';
 
 import { routes } from './app.routes';
-import { languageFeature } from './store/language/language.feature';
+import { settingsFeature } from './store/settings/settings.feature';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
     provideStore({
-      [languageFeature.name]: languageFeature.reducer,
+      [settingsFeature.name]: settingsFeature.reducer,
     }),
-  ]
+  ],
 };

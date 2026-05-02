@@ -1,6 +1,6 @@
 <div class="header-buttons-container">
-  <button class="button button-secondary">Contact Me</button>
-  <button class="button button-primary">Request an Appointment</button>
+  <button class="button button-secondary">{{ 'common.contact' | translate }}</button>
+  <button class="button button-primary">{{ 'common.requestAnAppointment' | translate }}</button>
   @if (isBulgarian()) {
     <button
       class="button button-secondary button-flag"
@@ -9,7 +9,7 @@
       title="Switch to English"
     >
       <mia-english-flag />
-      English
+      {{ 'common.translateToEnglish' | translate }}
     </button>
   }
   @if (isEnEnglish()) {
@@ -20,7 +20,7 @@
       title="Switch to Bulgarian"
     >
       <mia-bulgarian-flag />
-      Bulgarian
+      {{ 'common.translateToBulgarian' | translate }}
     </button>
   }
 </div>

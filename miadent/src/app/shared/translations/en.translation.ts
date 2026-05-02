@@ -1,11 +1,11 @@
-import { TranslationModel } from '../models/translation.mode';
+import { TranslationModel } from '../models/translation.model';
 
 export const enTranslation: TranslationModel = {
   common: {
     requestAnAppointment: 'Request an Appointment',
     contact: 'Contact',
     translateToEnglish: 'English',
-    translateToBulgarian: 'Bulgarian',
+    translateToBulgarian: 'Български',
   },
 
   navigation: {
