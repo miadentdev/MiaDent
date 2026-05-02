@@ -1,0 +1,5 @@
+.header-buttons-container {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: flex-end;
+}
