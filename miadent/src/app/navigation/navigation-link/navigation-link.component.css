@@ -1,11 +1,12 @@
 .navigation-link {
+  height: 100%;
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: var(--color-text);
+  padding-left: var(--spacing-sm);
+  padding-right: var(--spacing-sm);
   font-weight: 500;
-  border-radius: var(--radius-md);
-  flex: 1;
 
   transition:
     background-color 150ms ease-in-out,
@@ -13,7 +14,7 @@
 }
 
 .navigation-link:hover {
-  background-color: #f1f5f9;
+  background-color: #cbd5e1;
 }
 
 .navigation-link.active {

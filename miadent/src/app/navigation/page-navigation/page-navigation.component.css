@@ -1,5 +1,6 @@
 .page-navigation-container {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-md);
+  align-items: stretch;
+  height: 100%;
 }
