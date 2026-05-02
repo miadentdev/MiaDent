@@ -9,6 +9,10 @@
   gap: var(--spacing-md);
 }
 
+.header-container > * {
+  cursor: pointer;
+}
+
 .header-container > mia-page-navigation {
   justify-self: start;
   min-width: 0;
