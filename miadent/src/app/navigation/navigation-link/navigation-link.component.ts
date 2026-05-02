@@ -10,9 +10,10 @@ import { Router, RouterModule } from '@angular/router';
 export class NavigationLinkComponent {
   private router = inject(Router);
 
-  name = input<string>();
+  slug = input<string>();
+  label = input<string>();
 
   protected navigate(): void {
-    this.router.navigateByUrl(`/${this.name()?.toLowerCase() ?? ''}`);
+    this.router.navigateByUrl(`/${this.slug()?.toLowerCase() ?? ''}`);
   }
 }

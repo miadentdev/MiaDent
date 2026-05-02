@@ -1,5 +1,8 @@
 <div class="page-navigation-container">
   @for (link of links; track link) {
-    <mia-navigation-link [name]="link" />
+    <mia-navigation-link
+      [slug]="link.slug"
+      [label]="link.label"
+    />
   }
 </div>

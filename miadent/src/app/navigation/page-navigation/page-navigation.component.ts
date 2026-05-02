@@ -8,5 +8,9 @@ import { NavigationLinkComponent } from '../navigation-link/navigation-link.comp
   styleUrl: './page-navigation.component.css',
 })
 export class PageNavigationComponent {
-  protected links = ['Home', 'Services', 'Contact Me'];
+  protected links = [
+    { slug: 'home', label: 'Home' },
+    { slug: 'services', label: 'Services' },
+    { slug: 'contact', label: 'Contact Me' },
+  ];
 }
