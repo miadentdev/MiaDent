@@ -12,5 +12,14 @@ export class PageNavigationComponent {
     { slug: 'home', label: 'Home' },
     { slug: 'services', label: 'Services' },
     { slug: 'contact', label: 'Contact Me' },
+    { slug: 'about', label: 'About Me' },
+    { slug: 'about', label: 'About Me' },
+    { slug: 'about', label: 'About Me' },
+    { slug: 'about', label: 'About Me' },
+
+    { slug: 'about', label: 'About Me' },
+    { slug: 'about', label: 'About Me' },
+    { slug: 'about', label: 'About Me' },
+    { slug: 'about', label: 'About Me' },
   ];
 }

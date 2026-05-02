@@ -1,9 +1,24 @@
 .header-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   border: 1px solid black;
   flex: 1;
   padding-left: var(--spacing-sm);
   padding-right: var(--spacing-sm);
+  gap: var(--spacing-md);
+}
+
+.header-container > mia-page-navigation {
+  justify-self: start;
+  min-width: 0;
+}
+
+.header-container > mia-logo {
+  justify-self: center;
+}
+
+.header-container > .button {
+  justify-self: end;
+  min-width: 0;
 }
