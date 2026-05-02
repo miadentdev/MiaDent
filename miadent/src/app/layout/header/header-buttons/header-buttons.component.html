@@ -1,4 +1,20 @@
 <div class="header-buttons-container">
   <button class="button button-secondary">Contact Me</button>
   <button class="button button-primary">Request an Appointment</button>
+  @if (isBulgarian()) {
+    <button
+      class="button button-secondary"
+      (click)="translateToEnglish()"
+    >
+      English
+    </button>
+  }
+  @if (isEnEnglish()) {
+    <button
+      class="button button-secondary"
+      (click)="translateToBulgarian()"
+    >
+      Bulgarian
+    </button>
+  }
 </div>
