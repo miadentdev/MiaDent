@@ -1,0 +1,46 @@
+.header-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  text-decoration: none;
+
+  transition:
+    opacity 150ms ease-in-out,
+    transform 150ms ease-in-out;
+}
+
+.header-logo-link:hover {
+  opacity: 0.85;
+}
+
+.header-logo-link:active {
+  transform: scale(0.98);
+}
+
+.header-logo-image {
+  width: 48px;
+  height: 48px;
+
+  object-fit: contain;
+  flex-shrink: 0;
+
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .header-logo-link {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .header-logo-image {
+    width: 40px;
+    height: 40px;
+  }
+}
