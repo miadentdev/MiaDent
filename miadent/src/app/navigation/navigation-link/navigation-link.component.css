@@ -1,0 +1,26 @@
+.navigation-link {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.5rem 0.75rem;
+
+  text-decoration: none;
+  color: var(--color-text);
+
+  font-weight: 500;
+
+  border-radius: var(--radius-md);
+
+  transition:
+    background-color 150ms ease-in-out,
+    color 150ms ease-in-out;
+}
+
+.navigation-link:hover {
+  background-color: #f1f5f9;
+}
+
+.navigation-link.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}

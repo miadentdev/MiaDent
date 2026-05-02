@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { NavigationLinkComponent } from '../navigation-link/navigation-link.component';
 
 @Component({
   selector: 'mia-page-navigation',
-  imports: [],
+  imports: [NavigationLinkComponent],
   templateUrl: './page-navigation.component.html',
   styleUrl: './page-navigation.component.css',
 })

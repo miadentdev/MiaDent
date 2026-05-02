@@ -1,1 +1,8 @@
-<p>navigation-link works!</p>
+<a
+  class="navigation-link"
+  [routerLink]="route"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: true }"
+>
+  {{ name() }}
+</a>
