@@ -7,6 +7,6 @@ import { HeaderButtonsComponent } from './header-buttons/header-buttons.componen
   selector: 'mia-header',
   imports: [LogoComponent, PageNavigationComponent, HeaderButtonsComponent],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
+  styleUrl: './header.component.css'
 })
 export class HeaderComponent {}

@@ -8,7 +8,7 @@ describe('PageNavigationComponent', (): void => {
 
   beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
-      imports: [PageNavigationComponent],
+      imports: [PageNavigationComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(PageNavigationComponent);

@@ -10,7 +10,7 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
     provideStore({
-      [settingsFeature.name]: settingsFeature.reducer,
-    }),
-  ],
+      [settingsFeature.name]: settingsFeature.reducer
+    })
+  ]
 };

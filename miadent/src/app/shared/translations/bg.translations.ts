@@ -5,13 +5,13 @@ export const bgTranslation: TranslationModel = {
     requestAnAppointment: 'Запази час',
     contact: 'Контакти',
     translateToEnglish: 'English',
-    translateToBulgarian: 'Български',
+    translateToBulgarian: 'Български'
   },
 
   navigation: {
     home: 'Начало',
     services: 'Услуги',
     contact: 'Контакти',
-    about: 'За мен',
-  },
+    about: 'За мен'
+  }
 };

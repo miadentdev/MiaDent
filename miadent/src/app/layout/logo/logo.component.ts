@@ -5,6 +5,6 @@ import { RouterModule } from '@angular/router';
   selector: 'mia-logo',
   imports: [RouterModule],
   templateUrl: './logo.component.html',
-  styleUrl: './logo.component.css',
+  styleUrl: './logo.component.css'
 })
 export class LogoComponent {}

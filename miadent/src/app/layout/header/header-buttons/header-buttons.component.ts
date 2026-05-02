@@ -12,14 +12,14 @@ import { selectCurrentLanguage } from '../../../store/settings/settings.feature'
   selector: 'mia-header-buttons',
   imports: [BulgarianFlagComponent, EnglishFlagComponent, TranslatePipe],
   templateUrl: './header-buttons.component.html',
-  styleUrl: './header-buttons.component.css',
+  styleUrl: './header-buttons.component.css'
 })
 export class HeaderButtonsComponent {
   private readonly store: Store = inject(Store);
 
   protected readonly currentLanguage: Signal<Language> = toSignal(
     this.store.select(selectCurrentLanguage),
-    { requireSync: true },
+    { requireSync: true }
   );
 
   protected isEnEnglish(): boolean {

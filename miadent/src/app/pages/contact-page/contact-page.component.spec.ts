@@ -8,7 +8,7 @@ describe('ContactPageComponent', (): void => {
 
   beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
-      imports: [ContactPageComponent],
+      imports: [ContactPageComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(ContactPageComponent);

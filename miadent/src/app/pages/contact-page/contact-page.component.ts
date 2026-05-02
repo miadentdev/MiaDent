@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'mia-contact-page',
   imports: [],
   templateUrl: './contact-page.component.html',
-  styleUrl: './contact-page.component.css',
+  styleUrl: './contact-page.component.css'
 })
 export class ContactPageComponent {}

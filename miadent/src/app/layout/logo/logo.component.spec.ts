@@ -8,7 +8,7 @@ describe('LogoComponent', (): void => {
 
   beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
-      imports: [LogoComponent],
+      imports: [LogoComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(LogoComponent);

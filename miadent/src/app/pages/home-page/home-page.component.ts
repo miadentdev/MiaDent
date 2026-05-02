@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'mia-home-page',
   imports: [],
   templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.css',
+  styleUrl: './home-page.component.css'
 })
 export class HomePageComponent {}

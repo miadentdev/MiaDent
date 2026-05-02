@@ -8,7 +8,7 @@ describe('BodyComponent', (): void => {
 
   beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
-      imports: [BodyComponent],
+      imports: [BodyComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(BodyComponent);

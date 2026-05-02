@@ -5,13 +5,13 @@ export const enTranslation: TranslationModel = {
     requestAnAppointment: 'Request an Appointment',
     contact: 'Contact',
     translateToEnglish: 'English',
-    translateToBulgarian: 'Български',
+    translateToBulgarian: 'Български'
   },
 
   navigation: {
     home: 'Home',
     services: 'Services',
     contact: 'Contact',
-    about: 'About',
-  },
+    about: 'About'
+  }
 };

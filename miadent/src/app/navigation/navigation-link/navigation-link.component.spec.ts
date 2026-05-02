@@ -8,7 +8,7 @@ describe('NavigationLinkComponent', (): void => {
 
   beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
-      imports: [NavigationLinkComponent],
+      imports: [NavigationLinkComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(NavigationLinkComponent);

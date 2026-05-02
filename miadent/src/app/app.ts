@@ -7,7 +7,7 @@ import { HeaderComponent } from './layout/header/header.component';
   selector: 'mia-root',
   imports: [HeaderComponent, FooterComponent, BodyComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  styleUrl: './app.css'
 })
 export class App {
   protected readonly title: WritableSignal<string> = signal('miadent');

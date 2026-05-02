@@ -8,7 +8,7 @@ describe('HomePageComponent', (): void => {
 
   beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
-      imports: [HomePageComponent],
+      imports: [HomePageComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(HomePageComponent);

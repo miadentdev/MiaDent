@@ -4,7 +4,8 @@
       "Bash(npx prettier *)",
       "Bash(npm install *)",
       "Bash(npx tsc *)",
-      "Bash(npx ng *)"
+      "Bash(npx ng *)",
+      "Bash(npx eslint *)"
     ]
   }
 }

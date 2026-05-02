@@ -7,7 +7,7 @@ export interface SettingsState {
 }
 
 export const initialSettingsState: SettingsState = {
-  currentLanguage: Language.Bulgarian,
+  currentLanguage: Language.Bulgarian
 };
 
 export const settingsFeature = createFeature({
@@ -18,10 +18,10 @@ export const settingsFeature = createFeature({
       SettingsActions.setLanguage,
       (state: SettingsState, { language }: { language: Language }): SettingsState => ({
         ...state,
-        currentLanguage: language,
-      }),
-    ),
-  ),
+        currentLanguage: language
+      })
+    )
+  )
 });
 
 export const { selectCurrentLanguage } = settingsFeature;

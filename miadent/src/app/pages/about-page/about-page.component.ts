@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'mia-about-page',
   imports: [],
   templateUrl: './about-page.component.html',
-  styleUrl: './about-page.component.css',
+  styleUrl: './about-page.component.css'
 })
 export class AboutPageComponent {}

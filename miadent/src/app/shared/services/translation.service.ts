@@ -8,7 +8,7 @@ import { bgTranslation } from '../translations/bg.translations';
 import { enTranslation } from '../translations/en.translation';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class TranslationService {
   private readonly store: Store = inject(Store);
@@ -18,11 +18,11 @@ export class TranslationService {
 
   private readonly translations: Record<Language, TranslationModel> = {
     [Language.English]: enTranslation,
-    [Language.Bulgarian]: bgTranslation,
+    [Language.Bulgarian]: bgTranslation
   };
 
   private readonly currentTranslations: Signal<TranslationModel> = computed(
-    (): TranslationModel => this.translations[this.currentLanguage()],
+    (): TranslationModel => this.translations[this.currentLanguage()]
   );
 
   public translate(path: string): string {

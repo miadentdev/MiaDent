@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'mia-bulgarian-flag',
   imports: [],
   templateUrl: './bulgarian-flag.component.html',
-  styleUrl: './bulgarian-flag.component.css',
+  styleUrl: './bulgarian-flag.component.css'
 })
 export class BulgarianFlagComponent {}

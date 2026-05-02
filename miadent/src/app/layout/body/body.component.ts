@@ -5,6 +5,6 @@ import { RouterOutlet } from '@angular/router';
   selector: 'mia-body',
   imports: [RouterOutlet],
   templateUrl: './body.component.html',
-  styleUrl: './body.component.css',
+  styleUrl: './body.component.css'
 })
 export class BodyComponent {}

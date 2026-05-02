@@ -8,7 +8,7 @@ describe('HeaderButtonsComponent', (): void => {
 
   beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
-      imports: [HeaderButtonsComponent],
+      imports: [HeaderButtonsComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(HeaderButtonsComponent);
