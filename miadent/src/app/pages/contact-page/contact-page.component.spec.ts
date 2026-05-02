@@ -2,11 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactPageComponent } from './contact-page.component';
 
-describe('ContactPageComponent', () => {
+describe('ContactPageComponent', (): void => {
   let component: ContactPageComponent;
   let fixture: ComponentFixture<ContactPageComponent>;
 
-  beforeEach(async () => {
+  beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
       imports: [ContactPageComponent],
     }).compileComponents();
@@ -16,7 +16,7 @@ describe('ContactPageComponent', () => {
     await fixture.whenStable();
   });
 
-  it('should create', () => {
+  it('should create', (): void => {
     expect(component).toBeTruthy();
   });
 });

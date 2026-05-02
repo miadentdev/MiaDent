@@ -2,11 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AboutPageComponent } from './about-page.component';
 
-describe('AboutPageComponent', () => {
+describe('AboutPageComponent', (): void => {
   let component: AboutPageComponent;
   let fixture: ComponentFixture<AboutPageComponent>;
 
-  beforeEach(async () => {
+  beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
       imports: [AboutPageComponent],
     }).compileComponents();
@@ -16,7 +16,7 @@ describe('AboutPageComponent', () => {
     await fixture.whenStable();
   });
 
-  it('should create', () => {
+  it('should create', (): void => {
     expect(component).toBeTruthy();
   });
 });

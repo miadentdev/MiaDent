@@ -2,11 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PageNavigationComponent } from './page-navigation.component';
 
-describe('PageNavigationComponent', () => {
+describe('PageNavigationComponent', (): void => {
   let component: PageNavigationComponent;
   let fixture: ComponentFixture<PageNavigationComponent>;
 
-  beforeEach(async () => {
+  beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
       imports: [PageNavigationComponent],
     }).compileComponents();
@@ -16,7 +16,7 @@ describe('PageNavigationComponent', () => {
     await fixture.whenStable();
   });
 
-  it('should create', () => {
+  it('should create', (): void => {
     expect(component).toBeTruthy();
   });
 });

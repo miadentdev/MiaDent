@@ -1,5 +1,5 @@
-import { Component, inject, input } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Component, computed, input, InputSignal, Signal } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'mia-navigation-link',
@@ -8,12 +8,10 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './navigation-link.component.css',
 })
 export class NavigationLinkComponent {
-  private router = inject(Router);
+  public readonly slug: InputSignal<string | undefined> = input<string>();
+  public readonly label: InputSignal<string | undefined> = input<string>();
 
-  slug = input<string>();
-  label = input<string>();
-
-  protected navigate(): void {
-    this.router.navigateByUrl(`/${this.slug()?.toLowerCase() ?? ''}`);
-  }
+  protected readonly route: Signal<string> = computed(
+    (): string => `/${this.slug()?.toLowerCase() ?? ''}`,
+  );
 }

@@ -14,10 +14,13 @@ export const languageFeature = createFeature({
   name: 'language',
   reducer: createReducer(
     initialLanguageState,
-    on(LanguageActions.setLanguage, (state, { language }) => ({
-      ...state,
-      currentLanguage: language,
-    })),
+    on(
+      LanguageActions.setLanguage,
+      (state: LanguageState, { language }: { language: Language }): LanguageState => ({
+        ...state,
+        currentLanguage: language,
+      }),
+    ),
   ),
 });
 

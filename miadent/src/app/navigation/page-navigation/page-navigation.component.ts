@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationLink } from '../models/navigation-link.model';
 import { NavigationLinkComponent } from '../navigation-link/navigation-link.component';
 
 @Component({
@@ -8,7 +9,7 @@ import { NavigationLinkComponent } from '../navigation-link/navigation-link.comp
   styleUrl: './page-navigation.component.css',
 })
 export class PageNavigationComponent {
-  protected links = [
+  protected readonly links: NavigationLink[] = [
     { slug: 'home', label: 'Home' },
     { slug: 'about', label: 'About' },
     { slug: 'services', label: 'Services' },

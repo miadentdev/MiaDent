@@ -2,11 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderButtonsComponent } from './header-buttons.component';
 
-describe('HeaderButtonsComponent', () => {
+describe('HeaderButtonsComponent', (): void => {
   let component: HeaderButtonsComponent;
   let fixture: ComponentFixture<HeaderButtonsComponent>;
 
-  beforeEach(async () => {
+  beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
       imports: [HeaderButtonsComponent],
     }).compileComponents();
@@ -16,7 +16,7 @@ describe('HeaderButtonsComponent', () => {
     await fixture.whenStable();
   });
 
-  it('should create', () => {
+  it('should create', (): void => {
     expect(component).toBeTruthy();
   });
 });

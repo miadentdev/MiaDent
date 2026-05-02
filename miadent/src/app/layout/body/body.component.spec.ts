@@ -2,11 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BodyComponent } from './body.component';
 
-describe('BodyComponent', () => {
+describe('BodyComponent', (): void => {
   let component: BodyComponent;
   let fixture: ComponentFixture<BodyComponent>;
 
-  beforeEach(async () => {
+  beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
       imports: [BodyComponent],
     }).compileComponents();
@@ -16,7 +16,7 @@ describe('BodyComponent', () => {
     await fixture.whenStable();
   });
 
-  it('should create', () => {
+  it('should create', (): void => {
     expect(component).toBeTruthy();
   });
 });

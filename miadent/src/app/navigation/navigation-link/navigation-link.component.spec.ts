@@ -2,11 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavigationLinkComponent } from './navigation-link.component';
 
-describe('NavigationLinkComponent', () => {
+describe('NavigationLinkComponent', (): void => {
   let component: NavigationLinkComponent;
   let fixture: ComponentFixture<NavigationLinkComponent>;
 
-  beforeEach(async () => {
+  beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
       imports: [NavigationLinkComponent],
     }).compileComponents();
@@ -16,7 +16,7 @@ describe('NavigationLinkComponent', () => {
     await fixture.whenStable();
   });
 
-  it('should create', () => {
+  it('should create', (): void => {
     expect(component).toBeTruthy();
   });
 });

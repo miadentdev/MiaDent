@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Store } from '@ngrx/store';
 import { BulgarianFlagComponent } from '../../../shared/components/bulgarian-flag/bulgarian-flag.component';
@@ -14,11 +14,12 @@ import { selectCurrentLanguage } from '../../../store/language/language.feature'
   styleUrl: './header-buttons.component.css',
 })
 export class HeaderButtonsComponent {
-  private store = inject(Store);
+  private readonly store: Store = inject(Store);
 
-  protected currentLanguage = toSignal(this.store.select(selectCurrentLanguage), {
-    requireSync: true,
-  });
+  protected readonly currentLanguage: Signal<Language> = toSignal(
+    this.store.select(selectCurrentLanguage),
+    { requireSync: true },
+  );
 
   protected isEnEnglish(): boolean {
     return this.currentLanguage() === Language.English;
@@ -28,11 +29,11 @@ export class HeaderButtonsComponent {
     return this.currentLanguage() === Language.Bulgarian;
   }
 
-  protected translateToBulgarian() {
+  protected translateToBulgarian(): void {
     this.store.dispatch(LanguageActions.setLanguage({ language: Language.Bulgarian }));
   }
 
-  protected translateToEnglish() {
+  protected translateToEnglish(): void {
     this.store.dispatch(LanguageActions.setLanguage({ language: Language.English }));
   }
 }
