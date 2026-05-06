@@ -12,6 +12,7 @@
     <button
       class="hamburger"
       [class.is-open]="isMenuOpen()"
+      [class.active]="isMenuOpen()"
       type="button"
       [attr.aria-label]="isMenuOpen() ? 'Close menu' : 'Open menu'"
       [attr.aria-expanded]="isMenuOpen()"
