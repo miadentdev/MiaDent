@@ -1,5 +1,12 @@
-<div class="header-container">
-  <mia-page-navigation></mia-page-navigation>
-  <mia-logo></mia-logo>
-  <mia-header-buttons></mia-header-buttons>
-</div>
+@if (isDesktop()) {
+  <div class="header-container">
+    <mia-page-navigation></mia-page-navigation>
+    <mia-logo></mia-logo>
+    <mia-header-buttons></mia-header-buttons>
+  </div>
+} @else {
+  <div class="header-container header-container-mobile">
+    <mia-logo></mia-logo>
+    <mia-page-navigation></mia-page-navigation>
+  </div>
+}
