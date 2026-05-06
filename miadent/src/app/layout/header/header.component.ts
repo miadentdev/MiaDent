@@ -2,6 +2,7 @@ import { Component, HostListener, signal, WritableSignal } from '@angular/core';
 import { PageNavigationComponent } from '../../navigation/page-navigation/page-navigation.component';
 import { LogoComponent } from '../logo/logo.component';
 import { HeaderButtonsComponent } from './header-buttons/header-buttons.component';
+import { desktopWidthBreakpoint } from '../../navigation/constants/window-size.const';
 
 @Component({
   selector: 'mia-header',
@@ -11,11 +12,11 @@ import { HeaderButtonsComponent } from './header-buttons/header-buttons.componen
 })
 export class HeaderComponent {
   protected readonly isDesktop: WritableSignal<boolean> = signal<boolean>(
-    window.innerWidth >= 1170
+    window.innerWidth >= desktopWidthBreakpoint
   );
 
   @HostListener('window:resize')
   protected onResize(): void {
-    this.isDesktop.set(window.innerWidth >= 1170);
+    this.isDesktop.set(window.innerWidth >= desktopWidthBreakpoint);
   }
 }
