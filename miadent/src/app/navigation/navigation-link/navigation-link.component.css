@@ -10,14 +10,14 @@
 
   transition:
     background-color 150ms ease-in-out,
-    color 150ms ease-in-out;
+    color 150ms ease-in-out,
+    transform 150ms ease-in-out;
 }
 
 .navigation-link:hover {
-  background-color: #cbd5e1;
+  opacity: 0.85;
 }
 
 .navigation-link.active {
   color: var(--color-primary);
-  font-weight: 600;
 }
