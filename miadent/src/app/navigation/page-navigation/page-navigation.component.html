@@ -11,12 +11,34 @@
   <div class="mobile-navigation-container">
     <button
       class="hamburger"
+      [class.is-open]="isMenuOpen()"
       type="button"
-      aria-label="Toggle menu"
+      [attr.aria-label]="isMenuOpen() ? 'Close menu' : 'Open menu'"
+      [attr.aria-expanded]="isMenuOpen()"
+      (click)="toggleMenu()"
     >
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
       <span class="hamburger-bar"></span>
     </button>
   </div>
+
+  @if (isMenuOpen()) {
+    <aside class="sidebar">
+      <mia-language-switch class="sidebar-language-switch" />
+      <nav class="sidebar-navigation">
+        @for (link of links; track link) {
+          <mia-navigation-link
+            class="sidebar-link"
+            [slug]="link.slug"
+            [label]="link.label"
+            (click)="closeMenu()"
+          />
+        }
+      </nav>
+      <div class="sidebar-buttons">
+        <mia-header-buttons [showLanguageSwitch]="false"></mia-header-buttons>
+      </div>
+    </aside>
+  }
 }

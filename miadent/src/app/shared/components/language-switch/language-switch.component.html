@@ -1,0 +1,22 @@
+@if (isBulgarian()) {
+  <button
+    class="button button-outline button-flag"
+    (click)="translateToEnglish()"
+    aria-label="Switch to English"
+    title="Switch to English"
+  >
+    <mia-english-flag />
+    {{ 'common.translateToEnglish' | translate }}
+  </button>
+}
+@if (isEnglish()) {
+  <button
+    class="button button-outline button-flag"
+    (click)="translateToBulgarian()"
+    aria-label="Switch to Bulgarian"
+    title="Switch to Bulgarian"
+  >
+    <mia-bulgarian-flag />
+    {{ 'common.translateToBulgarian' | translate }}
+  </button>
+}

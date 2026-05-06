@@ -23,7 +23,11 @@
   color: var(--font-color);
   border: 3px solid var(--primary-border-color);
   border-radius: var(--radius-sm);
-  transition: color var(--transition-fast);
+  background-color: transparent;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .hamburger-bar {
@@ -32,9 +36,87 @@
   height: 3px;
   background-color: currentColor;
   border-radius: 2px;
+  transition:
+    transform var(--transition-normal),
+    opacity var(--transition-fast);
 }
 
 .hamburger:hover,
 .hamburger:active {
   color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.hamburger:hover {
+  transform: scale(1.02);
+}
+
+.hamburger:active {
+  transform: scale(1);
+}
+
+.hamburger.is-open {
+  position: fixed;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  z-index: 1001;
+}
+
+.hamburger.is-open .hamburger-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.is-open .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-open .hamburger-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--spacing-3xl)) var(--spacing-lg) var(--spacing-xl);
+  background-color: rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  animation: sidebar-fade-in var(--transition-normal);
+}
+
+@keyframes sidebar-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sidebar-language-switch {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+}
+
+.sidebar-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  flex: 1;
+  margin-top: var(--spacing-lg);
+}
+
+.sidebar-link {
+  display: block;
+  font-size: 1.25rem;
+  border-bottom: 1px solid var(--secondary-border-color);
+}
+
+.sidebar-buttons {
+  margin-top: auto;
+  padding-top: var(--spacing-lg);
 }
