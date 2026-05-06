@@ -21,3 +21,8 @@
 .navigation-link.active {
   color: var(--color-primary);
 }
+
+:host-context(.sidebar) .navigation-link {
+  display: flex;
+  width: 100%;
+}
