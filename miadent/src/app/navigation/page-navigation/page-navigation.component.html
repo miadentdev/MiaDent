@@ -1,8 +1,22 @@
-<div class="page-navigation-container">
-  @for (link of links; track link) {
-    <mia-navigation-link
-      [slug]="link.slug"
-      [label]="link.label"
-    />
-  }
-</div>
+@if (isDesktop()) {
+  <div class="page-navigation-container">
+    @for (link of links; track link) {
+      <mia-navigation-link
+        [slug]="link.slug"
+        [label]="link.label"
+      />
+    }
+  </div>
+} @else {
+  <div class="mobile-navigation-container">
+    <button
+      class="hamburger"
+      type="button"
+      aria-label="Toggle menu"
+    >
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </div>
+}
