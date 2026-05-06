@@ -42,7 +42,7 @@
 }
 
 .hamburger:hover,
-.hamburger:active {
+.hamburger.active {
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
@@ -52,7 +52,7 @@
 }
 
 .hamburger:active {
-  transform: scale(1);
+  transform: scale(0.97);
 }
 
 .hamburger.is-open {
