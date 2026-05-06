@@ -5,7 +5,8 @@
       "Bash(npm install *)",
       "Bash(npx tsc *)",
       "Bash(npx ng *)",
-      "Bash(npx eslint *)"
+      "Bash(npx eslint *)",
+      "Bash(git -C c:/Projects/MiaDent status)"
     ]
   }
 }
