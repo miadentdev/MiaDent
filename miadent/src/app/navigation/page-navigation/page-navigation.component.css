@@ -16,9 +16,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 28px;
-  padding: 4px;
+  width: 46px;
+  height: 46px;
+  padding: 6px;
   color: var(--font-color);
+  border: 3px solid var(--primary-border-color);
+  border-radius: var(--radius-sm);
   transition: color var(--transition-fast);
 }
 

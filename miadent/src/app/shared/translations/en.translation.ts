@@ -2,7 +2,7 @@ import { TranslationModel } from '../models/translation.model';
 
 export const enTranslation: TranslationModel = {
   common: {
-    requestAnAppointment: 'Request an Appointment',
+    requestAnAppointment: 'Reserve',
     contact: 'Contact',
     translateToEnglish: 'English',
     translateToBulgarian: 'Български'
