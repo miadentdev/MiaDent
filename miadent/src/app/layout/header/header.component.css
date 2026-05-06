@@ -5,6 +5,7 @@
   flex: 1;
   padding-right: var(--spacing-sm);
   gap: var(--spacing-md);
+  border-bottom: 1px solid var(--primary-border-color);
 }
 
 .header-container > * {
