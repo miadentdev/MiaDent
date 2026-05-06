@@ -1,9 +1,9 @@
 <div class="header-buttons-container">
-  <button class="button button-secondary">{{ 'common.contact' | translate }}</button>
   <button class="button button-primary">{{ 'common.requestAnAppointment' | translate }}</button>
+  <button class="button button-secondary">{{ 'common.contact' | translate }}</button>
   @if (isBulgarian()) {
     <button
-      class="button button-secondary button-flag"
+      class="button button-outline button-flag"
       (click)="translateToEnglish()"
       aria-label="Switch to English"
       title="Switch to English"
@@ -14,7 +14,7 @@
   }
   @if (isEnEnglish()) {
     <button
-      class="button button-secondary button-flag"
+      class="button button-outline button-flag"
       (click)="translateToBulgarian()"
       aria-label="Switch to Bulgarian"
       title="Switch to Bulgarian"
