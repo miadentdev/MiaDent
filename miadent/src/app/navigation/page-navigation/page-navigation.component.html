@@ -12,7 +12,6 @@
     <button
       class="hamburger"
       [class.is-open]="isMenuOpen()"
-      [class.active]="isMenuOpen()"
       [attr.aria-label]="isMenuOpen() ? 'Close menu' : 'Open menu'"
       [attr.aria-expanded]="isMenuOpen()"
       (click)="toggleMenu()"
