@@ -18,15 +18,4 @@
 @use './alerts';
 @use './loading';
 @use './responsive';
-
-/* =========================
-   Visibility
-   ========================= */
-
-.hidden {
-  display: none !important;
-}
-
-.visible {
-  display: block !important;
-}
+@use './visibility';
