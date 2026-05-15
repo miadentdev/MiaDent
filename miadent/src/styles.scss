@@ -17,6 +17,7 @@
 @use './tables';
 @use './alerts';
 @use './loading';
+@use './responsive';
 
 /* =========================
    Visibility
@@ -28,28 +29,4 @@
 
 .visible {
   display: block !important;
-}
-
-/* =========================
-   Responsive
-   ========================= */
-
-@media (max-width: 768px) {
-  .grid-2,
-  .grid-3,
-  .grid-4 {
-    grid-template-columns: 1fr;
-  }
-
-  .container {
-    padding: 0 var(--spacing-sm);
-  }
-
-  .mobile-column {
-    flex-direction: column;
-  }
-
-  .mobile-full {
-    width: 100%;
-  }
 }
