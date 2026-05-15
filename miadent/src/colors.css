@@ -1,0 +1,16 @@
+/* =========================================================
+   Color Scheme — derived from public/color-scheme.jpg
+   ========================================================= */
+
+:root {
+  --scheme-navy: #1f3c93;
+  --scheme-navy-dark: #14296e;
+  --scheme-teal: #27b8a5;
+  --scheme-teal-dark: #1d9b8b;
+  --scheme-sky: #42b6e8;
+  --scheme-mint: #e6f5f1;
+  --scheme-pale-blue: #dceaf6;
+  --scheme-off-white: #f5f8fa;
+  --scheme-heading: #1a2748;
+  --scheme-muted: #6b7591;
+}
