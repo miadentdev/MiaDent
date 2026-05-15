@@ -41,8 +41,7 @@
     opacity var(--transition-fast);
 }
 
-.hamburger:hover,
-.hamburger.active {
+.hamburger:hover {
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
