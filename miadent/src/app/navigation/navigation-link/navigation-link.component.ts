@@ -1,4 +1,4 @@
-import { Component, computed, input, InputSignal, Signal } from '@angular/core';
+﻿import { Component, computed, input, InputSignal, Signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 
@@ -6,7 +6,7 @@ import { TranslatePipe } from '../../shared/pipes/translate.pipe';
   selector: 'mia-navigation-link',
   imports: [RouterModule, TranslatePipe],
   templateUrl: './navigation-link.component.html',
-  styleUrl: './navigation-link.component.css'
+  styleUrl: './navigation-link.component.scss'
 })
 export class NavigationLinkComponent {
   public readonly slug: InputSignal<string> = input.required<string>();

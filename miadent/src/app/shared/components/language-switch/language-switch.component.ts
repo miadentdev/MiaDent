@@ -1,4 +1,4 @@
-import { Component, inject, Signal } from '@angular/core';
+﻿import { Component, inject, Signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Store } from '@ngrx/store';
 import { Language } from '../../enums/language.enum';
@@ -12,7 +12,7 @@ import { EnglishFlagComponent } from '../english-flag/english-flag.component';
   selector: 'mia-language-switch',
   imports: [BulgarianFlagComponent, EnglishFlagComponent, TranslatePipe],
   templateUrl: './language-switch.component.html',
-  styleUrl: './language-switch.component.css'
+  styleUrl: './language-switch.component.scss'
 })
 export class LanguageSwitchComponent {
   private readonly store: Store = inject(Store);

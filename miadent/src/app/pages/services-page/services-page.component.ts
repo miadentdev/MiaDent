@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 
 @Component({
   selector: 'mia-services-page',
   imports: [],
   templateUrl: './services-page.component.html',
-  styleUrl: './services-page.component.css'
+  styleUrl: './services-page.component.scss'
 })
 export class ServicesPageComponent {}

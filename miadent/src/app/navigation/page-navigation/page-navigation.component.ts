@@ -1,4 +1,4 @@
-import { Component, HostListener, signal, WritableSignal } from '@angular/core';
+﻿import { Component, HostListener, signal, WritableSignal } from '@angular/core';
 import { HeaderButtonsComponent } from '../../layout/header/header-buttons/header-buttons.component';
 import { LanguageSwitchComponent } from '../../shared/components/language-switch/language-switch.component';
 import { desktopWidthBreakpoint } from '../constants/window-size.const';
@@ -9,7 +9,7 @@ import { NavigationLinkComponent } from '../navigation-link/navigation-link.comp
   selector: 'mia-page-navigation',
   imports: [NavigationLinkComponent, HeaderButtonsComponent, LanguageSwitchComponent],
   templateUrl: './page-navigation.component.html',
-  styleUrl: './page-navigation.component.css'
+  styleUrl: './page-navigation.component.scss'
 })
 export class PageNavigationComponent {
   protected readonly links: NavigationLink[] = [

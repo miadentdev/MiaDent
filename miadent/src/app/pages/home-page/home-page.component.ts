@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 
 @Component({
   selector: 'mia-home-page',
   imports: [],
   templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.css'
+  styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent {}
