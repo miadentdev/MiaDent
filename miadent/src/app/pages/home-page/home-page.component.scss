@@ -4,6 +4,17 @@
   height: 100%;
   width: 100%;
 }
+
+.home-page__content {
+  display: flex;
+}
+
+.home-page__image {
+  width: 40%;
+  height: 60%;
+  aspect-ratio: 5/9;
+}
+
 .home-page__background {
   position: absolute;
   top: 0;
