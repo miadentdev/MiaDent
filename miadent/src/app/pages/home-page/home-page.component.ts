@@ -1,9 +1,8 @@
 import { Component, Signal, computed, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { Store } from '@ngrx/store';
 
-import { selectCurrentLanguage } from '../../store/settings/settings.feature';
 import { Language } from '../../shared/enums/language.enum';
+import { selectCurrentLanguage } from '../../store/settings/settings.feature';
 
 interface HomePageFeature {
   icon: 'tooth' | 'shield' | 'technology' | 'heart';
@@ -13,6 +12,7 @@ interface HomePageFeature {
 interface HomePageContent {
   address: string;
   phone: string;
+  email: string;
   titleStart: string;
   titleAccent: string;
   description: string;
@@ -25,7 +25,6 @@ interface HomePageContent {
 
 @Component({
   selector: 'mia-home-page',
-  imports: [RouterLink],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
@@ -39,12 +38,15 @@ export class HomePageComponent {
     (): HomePageContent => this.translations[this.currentLanguage()]
   );
 
+  protected isContactMenuOpen: boolean = false;
+
   private readonly translations: Record<Language, HomePageContent> = {
     [Language.Bulgarian]: {
       address: 'София, ул. "Васил Левски" 123',
-      phone: '0888 888 888',
+      phone: 'Телефон за връзка: 0888 888 888',
+      email: 'Мейл: info@miadent.bg',
       titleStart: 'Нека се погрижим',
-      titleAccent: 'за усмивка ви!',
+      titleAccent: 'за усмивка Ви!',
       description:
         'Безболезнена, внимателна и съвременна грижа за вашите зъби, поднесена с топлота!',
       primaryCta: 'Запази час',
@@ -60,11 +62,11 @@ export class HomePageComponent {
     },
     [Language.English]: {
       address: 'Sofia, str "Vasil Levski" 123',
-      phone: '0888 888 888',
+      phone: 'Phone: 0888 888 888',
+      email: 'Email: info@miadent.bg',
       titleStart: "Let's take care",
       titleAccent: 'of your smile!',
-      description:
-        'Painless, comfortable, and modern dental care delivered with warmth.',
+      description: 'Painless, comfortable, and modern dental care delivered with warmth.',
       primaryCta: 'Book now',
       secondaryCta: 'Learn more',
       leftImageAlt: 'Dr. Mia holding a child drawing and smiling.',
@@ -77,4 +79,12 @@ export class HomePageComponent {
       ]
     }
   };
+
+  protected openContactMenu(): void {
+    this.isContactMenuOpen = !this.isContactMenuOpen;
+  }
+
+  protected closeContactMenu(): void {
+    this.isContactMenuOpen = false;
+  }
 }

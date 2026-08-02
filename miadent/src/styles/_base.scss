@@ -15,6 +15,7 @@ app-root {
 }
 
 html {
+  display: block;
   font-size: 16px;
   scroll-behavior: smooth;
   width: 100%;
@@ -22,6 +23,7 @@ html {
 }
 
 body {
+  display: block;
   font-family: Inter, Roboto, 'Segoe UI', sans-serif;
   line-height: 1.5;
   color: var(--font-color);

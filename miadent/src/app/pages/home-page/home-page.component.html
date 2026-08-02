@@ -83,10 +83,31 @@
       }
     </div>
 
-    <div class="home-page__actions">
-      <a
+    <div class="home-page__contact-content">
+      <div class="home-page__badge">
+        <i
+          class="fa-solid fa-phone home-page__badge-icon"
+          aria-hidden="true"
+        ></i>
+        <div class="home-page__badge-text">
+          <span class="home-page__badge-address">{{ content().phone }}</span>
+        </div>
+      </div>
+      <div class="home-page__badge">
+        <i
+          class="fa-solid fa-envelope home-page__badge-icon"
+          aria-hidden="true"
+        ></i>
+        <div class="home-page__badge-text">
+          <span class="home-page__badge-address">{{ content().email }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="home-page__actions">
+      <button
         class="home-page__button home-page__button--primary"
-        routerLink="/contact"
+        (click)="openContactMenu()"
       >
         <span
           class="home-page__button-icon"
@@ -98,7 +119,7 @@
           ></i>
         </span>
         <span>{{ content().primaryCta }}</span>
-      </a>
+      </button>
 
       <a
         class="home-page__button home-page__button--secondary"
@@ -112,8 +133,18 @@
           →
         </span>
       </a>
-    </div>
+    </div> -->
   </div>
+
+  <!-- @if (isContactMenuOpen) {
+    <div class="home-page__contact">
+      <div class="home-page__contact-content">
+        <div>{{ content().email }}</div>
+        <div>{{ content().phone }}</div>
+        <button class="button button-primary" (click)="closeContactMenu()">Close</button>
+      </div>
+    </div>
+  } -->
 
   <div
     class="home-page__wave"
