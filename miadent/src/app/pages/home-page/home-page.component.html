@@ -23,7 +23,9 @@
         class="fa-solid fa-tooth home-page__badge-icon"
         aria-hidden="true"
       ></i>
-      <span>{{ content().badge }}</span>
+      <div class="home-page__badge-text">
+        <span class="home-page__badge-address">{{ content().address }}</span>
+      </div>
     </div>
 
     <div class="home-page__text">
@@ -90,11 +92,10 @@
           class="home-page__button-icon"
           aria-hidden="true"
         >
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M7 3v3M17 3v3M4 9h16M5 6h14a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a1 1 0 0 1 1-1Z"
-            />
-          </svg>
+          <i
+            class="fa-regular fa-calendar-days"
+            aria-hidden="true"
+          ></i>
         </span>
         <span>{{ content().primaryCta }}</span>
       </a>

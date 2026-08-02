@@ -11,7 +11,8 @@ interface HomePageFeature {
 }
 
 interface HomePageContent {
-  badge: string;
+  address: string;
+  phone: string;
   titleStart: string;
   titleAccent: string;
   description: string;
@@ -40,11 +41,12 @@ export class HomePageComponent {
 
   private readonly translations: Record<Language, HomePageContent> = {
     [Language.Bulgarian]: {
-      badge: 'Грижа с усмивка',
+      address: 'София, ул. "Васил Левски" 123',
+      phone: '0888 888 888',
       titleStart: 'Нека се погрижим',
-      titleAccent: 'за вашите зъби',
+      titleAccent: 'за усмивка ви!',
       description:
-        'Модерна, комфортна и персонализирана грижа за вашите зъби, поднесена с топлота!',
+        'Безболезнена, внимателна и съвременна грижа за вашите зъби, поднесена с топлота!',
       primaryCta: 'Запази час',
       secondaryCta: 'Научи повече',
       leftImageAlt: 'Д-р Миа показва детска рисунка с усмивка.',
@@ -53,15 +55,16 @@ export class HomePageComponent {
         { icon: 'tooth', label: 'Индивидуален подход' },
         { icon: 'shield', label: 'Сигурност и професионализъм' },
         { icon: 'technology', label: 'Модерни технологии' },
-        { icon: 'heart', label: 'Грижа и внимание' }
+        { icon: 'heart', label: 'Отговорност и внимание' }
       ]
     },
     [Language.English]: {
-      badge: 'Care with a smile',
+      address: 'Sofia, str "Vasil Levski" 123',
+      phone: '0888 888 888',
       titleStart: "Let's take care",
-      titleAccent: 'of your teeth',
+      titleAccent: 'of your smile!',
       description:
-        'Modern, comfortable, and personalized dental care delivered with warmth.',
+        'Painless, comfortable, and modern dental care delivered with warmth.',
       primaryCta: 'Book now',
       secondaryCta: 'Learn more',
       leftImageAlt: 'Dr. Mia holding a child drawing and smiling.',
@@ -70,7 +73,7 @@ export class HomePageComponent {
         { icon: 'tooth', label: 'Personal approach' },
         { icon: 'shield', label: 'Safety and professionalism' },
         { icon: 'technology', label: 'Modern technology' },
-        { icon: 'heart', label: 'Care and attention' }
+        { icon: 'heart', label: 'Responsibility and attention' }
       ]
     }
   };

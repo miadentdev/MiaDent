@@ -103,11 +103,26 @@
   background: rgba(255, 247, 255, 0.78);
   box-shadow: 0 14px 34px rgba(151, 127, 208, 0.14);
   color: #6844bb;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   backdrop-filter: blur(12px);
+}
+
+.home-page__badge-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.home-page__badge-address {
+  letter-spacing: 0.03em;
+}
+
+.home-page__badge-phone {
+  letter-spacing: 0.08em;
 }
 
 .home-page__text {
@@ -153,8 +168,8 @@
 .home-page__features {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  width: min(100%, 55rem);
-  border-radius: 2rem;
+  width: min(100%, 45rem);
+  border-radius: 1.65rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.28) 100%);
   backdrop-filter: blur(12px);
 }
@@ -163,9 +178,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.9rem;
-  min-height: 10.5rem;
-  padding: 1rem 1.15rem;
+  gap: 0.5rem;
+  min-height: 8rem;
+  padding: 0.85rem 0.65rem 0.5rem 0.65rem;
 }
 
 .home-page__feature:not(:last-child) {
@@ -175,7 +190,7 @@
 .home-page__feature p {
   margin: 0;
   color: var(--hero-text);
-  font-size: 1.02rem;
+  font-size: 0.92rem;
   line-height: 1.45;
 }
 
@@ -242,6 +257,10 @@
   content: '\f004';
 }
 
+.fa-calendar-days::before {
+  content: '\f073';
+}
+
 .home-page__actions {
   display: flex;
   align-items: center;
@@ -293,14 +312,17 @@
   place-items: center;
 }
 
-.home-page__button-icon svg {
-  width: 1.2rem;
-  height: 1.2rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.8;
+.home-page__button-icon i {
+  display: inline-block;
+  font-family: 'Font Awesome 7 Free';
+  font-size: 1.1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .home-page__arrow {
