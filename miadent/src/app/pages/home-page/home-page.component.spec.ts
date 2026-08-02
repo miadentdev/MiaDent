@@ -1,5 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideStore } from '@ngrx/store';
+import { provideRouter } from '@angular/router';
 
+import { settingsFeature } from '../../store/settings/settings.feature';
 import { HomePageComponent } from './home-page.component';
 
 describe('HomePageComponent', (): void => {
@@ -8,7 +11,13 @@ describe('HomePageComponent', (): void => {
 
   beforeEach(async (): Promise<void> => {
     await TestBed.configureTestingModule({
-      imports: [HomePageComponent]
+      imports: [HomePageComponent],
+      providers: [
+        provideRouter([]),
+        provideStore({
+          [settingsFeature.name]: settingsFeature.reducer
+        })
+      ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(HomePageComponent);

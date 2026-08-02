@@ -1,20 +1,121 @@
 <section class="home-page">
-  <div class="home-page__content">
+  <div class="home-page__backdrop">
     <img
-      class="home-page__image"
+      class="home-page__image home-page__image--left"
       src="images/background-image.JPG"
-      alt=""
-      aria-hidden="true"
+      [alt]="content().leftImageAlt"
     />
-    <div class="home-page__text">
-      <h1>Нека се погрижим за вашите зъби!</h1>
-      <h4>Модерна, комфортна и персонализирана грижа за вашите зъби, поднесена с топлота!</h4>
-    </div>
     <img
-      class="home-page__image"
+      class="home-page__image home-page__image--right"
       src="images/background-image-alt.JPG"
-      alt=""
-      aria-hidden="true"
+      [alt]="content().rightImageAlt"
     />
   </div>
+
+  <div
+    class="home-page__glow"
+    aria-hidden="true"
+  ></div>
+
+  <div class="home-page__content">
+    <div class="home-page__badge">
+      <i
+        class="fa-solid fa-tooth home-page__badge-icon"
+        aria-hidden="true"
+      ></i>
+      <span>{{ content().badge }}</span>
+    </div>
+
+    <div class="home-page__text">
+      <h1 class="home-page__title">
+        <span>{{ content().titleStart }}</span>
+        <span class="home-page__title-accent">{{ content().titleAccent }}</span>
+      </h1>
+
+      <div
+        class="home-page__divider"
+        aria-hidden="true"
+      ></div>
+
+      <p class="home-page__description">{{ content().description }}</p>
+    </div>
+
+    <div class="home-page__features">
+      @for (feature of content().features; track feature.label) {
+        <article class="home-page__feature">
+          <div
+            class="home-page__feature-icon"
+            [attr.data-icon]="feature.icon"
+          >
+            @if (feature.icon === 'tooth') {
+              <i
+                class="fa-solid fa-tooth"
+                aria-hidden="true"
+              ></i>
+            }
+
+            @if (feature.icon === 'shield') {
+              <i
+                class="fa-solid fa-shield-halved"
+                aria-hidden="true"
+              ></i>
+            }
+
+            @if (feature.icon === 'technology') {
+              <i
+                class="fa-solid fa-microchip"
+                aria-hidden="true"
+              ></i>
+            }
+
+            @if (feature.icon === 'heart') {
+              <i
+                class="fa-solid fa-heart"
+                aria-hidden="true"
+              ></i>
+            }
+          </div>
+
+          <p>{{ feature.label }}</p>
+        </article>
+      }
+    </div>
+
+    <div class="home-page__actions">
+      <a
+        class="home-page__button home-page__button--primary"
+        routerLink="/contact"
+      >
+        <span
+          class="home-page__button-icon"
+          aria-hidden="true"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M7 3v3M17 3v3M4 9h16M5 6h14a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a1 1 0 0 1 1-1Z"
+            />
+          </svg>
+        </span>
+        <span>{{ content().primaryCta }}</span>
+      </a>
+
+      <a
+        class="home-page__button home-page__button--secondary"
+        routerLink="/about"
+      >
+        <span>{{ content().secondaryCta }}</span>
+        <span
+          class="home-page__arrow"
+          aria-hidden="true"
+        >
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div
+    class="home-page__wave"
+    aria-hidden="true"
+  ></div>
 </section>
