@@ -83,13 +83,13 @@
 
 .home-page__image--left {
   left: 0;
-  object-position: 36% center;
+  object-position: 36% 22%;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0 78%, rgba(0, 0, 0, 0) 100%);
 }
 
 .home-page__image--right {
   right: 0;
-  object-position: 52% center;
+  object-position: 52% 20%;
   mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0 78%, rgba(0, 0, 0, 0) 100%);
 }
 
