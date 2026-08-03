@@ -48,7 +48,7 @@ export class HomePageComponent {
       city: 'област София',
       address: 'Божурище, пл Първи май 1, ет. 2, каб. 14',
       cabinet: 'етаж. 2, кабинет: 14',
-      phone: '0879540407',
+      phone: '+359 879540407',
       email: 'miadent.bozhurishte@gmail.com',
       workingHours: 'Работно време: Понеделник - Петък 10:00 - 18:00',
       titleStart: 'Нека се погрижим',
