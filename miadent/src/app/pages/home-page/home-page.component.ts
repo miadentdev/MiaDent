@@ -52,7 +52,7 @@ export class HomePageComponent {
       email: 'miadent.bozhurishte@gmail.com',
       workingHours: 'Работно време: Понеделник - Петък 10:00 - 18:00',
       titleStart: 'Нека се погрижим',
-      titleAccent: 'за усмивка Ви!',
+      titleAccent: 'за усмивката Ви!',
       description:
         'Безболезнена, внимателна и съвременна грижа за вашите зъби, поднесена с топлота!',
       primaryCta: 'Запази час',
