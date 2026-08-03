@@ -27,6 +27,13 @@
   min-width: 0;
 }
 
+@media (max-width: 760px) {
+  .header-container {
+    padding-right: var(--spacing-sm);
+    padding-left: var(--spacing-sm);
+  }
+}
+
 .header-container-mobile {
   display: flex;
   justify-content: space-between;

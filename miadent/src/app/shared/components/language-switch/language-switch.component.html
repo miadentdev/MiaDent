@@ -6,7 +6,7 @@
     title="Switch to English"
   >
     <mia-english-flag />
-    {{ 'common.translateToEnglish' | translate }}
+    <span class="flag-text">{{ 'common.translateToEnglish' | translate }}</span>
   </button>
 }
 @if (isEnglish()) {
@@ -17,6 +17,6 @@
     title="Switch to Bulgarian"
   >
     <mia-bulgarian-flag />
-    {{ 'common.translateToBulgarian' | translate }}
+    <span class="flag-text">{{ 'common.translateToBulgarian' | translate }}</span>
   </button>
 }
