@@ -425,8 +425,14 @@
 
   .home-page__content {
     gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
     padding-right: 1.1rem;
     padding-left: 1.1rem;
+  }
+
+  .home-page__description {
+    margin-bottom: 2rem;
   }
 
   .home-page__badge {
@@ -438,13 +444,13 @@
     opacity: 0.82;
   }
 
-  .home-page__image--left {
-    top: 3rem;
+  .home-page__image--right {
+    top: 10%;
     bottom: auto;
     height: 50%;
   }
 
-  .home-page__image--right {
+  .home-page__image--left {
     top: auto;
     bottom: 0;
     height: 56%;
