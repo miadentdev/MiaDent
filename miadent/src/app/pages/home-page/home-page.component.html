@@ -83,28 +83,28 @@
       }
     </div>
 
-    <div class="home-page__contact-content">
-      <div class="home-page__badge">
-        <i
-          class="fa-solid fa-phone home-page__badge-icon"
-          aria-hidden="true"
-        ></i>
-        <div class="home-page__badge-text">
-          <span class="home-page__badge-address">{{ content().phone }}</span>
-        </div>
-      </div>
-      <div class="home-page__badge">
-        <i
-          class="fa-solid fa-envelope home-page__badge-icon"
-          aria-hidden="true"
-        ></i>
-        <div class="home-page__badge-text">
-          <span class="home-page__badge-address">{{ content().email }}</span>
-        </div>
+    <div class="home-page__badge">
+      <i
+        class="fa-solid fa-envelope home-page__badge-icon"
+        aria-hidden="true"
+      ></i>
+      <div class="home-page__badge-text">
+        <span class="home-page__badge-address">{{ content().email }}</span>
       </div>
     </div>
+    <div class="home-page__badge">
+      <i
+        class="fa-solid fa-phone home-page__badge-icon"
+        aria-hidden="true"
+      ></i>
+      <div class="home-page__badge-text">
+        <span class="home-page__badge-address">{{ content().phone }}</span>
+      </div>
+    </div>
+  </div>
 
-    <!-- <div class="home-page__actions">
+  <!-- <div class="home-page__contact-content">
+    <div class="home-page__actions">
       <button
         class="home-page__button home-page__button--primary"
         (click)="openContactMenu()"
@@ -133,8 +133,8 @@
           →
         </span>
       </a>
-    </div> -->
-  </div>
+    </div>
+  </div> -->
 
   <!-- @if (isContactMenuOpen) {
     <div class="home-page__contact">
