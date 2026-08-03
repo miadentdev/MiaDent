@@ -10,9 +10,12 @@ interface HomePageFeature {
 }
 
 interface HomePageContent {
+  city: string;
   address: string;
+  cabinet: string;
   phone: string;
   email: string;
+  workingHours: string;
   titleStart: string;
   titleAccent: string;
   description: string;
@@ -42,9 +45,12 @@ export class HomePageComponent {
 
   private readonly translations: Record<Language, HomePageContent> = {
     [Language.Bulgarian]: {
-      address: 'София, ул. "Васил Левски" 123',
-      phone: 'Телефон за връзка: 0888 888 888',
-      email: 'Мейл: info@miadent.bg',
+      city: 'област София',
+      address: 'Божурище, пл Първи май 1, ет. 2, каб. 14',
+      cabinet: 'етаж. 2, кабинет: 14',
+      phone: 'Телефон за връзка: 0879 540 407',
+      email: 'Мейл: miadent.bozhurishte@gmail.com',
+      workingHours: 'Работно време: Понеделник - Петък 10:00 - 18:00',
       titleStart: 'Нека се погрижим',
       titleAccent: 'за усмивка Ви!',
       description:
@@ -61,9 +67,12 @@ export class HomePageComponent {
       ]
     },
     [Language.English]: {
-      address: 'Sofia, str "Vasil Levski" 123',
-      phone: 'Phone: 0888 888 888',
-      email: 'Email: info@miadent.bg',
+      city: 'Bozhurishte, Sofia region',
+      address: 'Bozhurishte, pl. "First of May" 1, 2nd floor, office: 14',
+      cabinet: '2nd floor, office: 14',
+      phone: 'Phone: +359 879 540 407',
+      email: 'Email: miadent.bozhurishte@gmail.com',
+      workingHours: 'Working hours: Monday - Friday 10:00 - 18:00',
       titleStart: "Let's take care",
       titleAccent: 'of your smile!',
       description: 'Painless, comfortable, and modern dental care delivered with warmth.',
