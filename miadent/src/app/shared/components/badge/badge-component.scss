@@ -1,0 +1,27 @@
+.home-page__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.3rem;
+  border: 1px solid rgba(142, 106, 216, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 247, 255, 0.78);
+  box-shadow: 0 14px 34px rgba(151, 127, 208, 0.14);
+  color: #6844bb;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  backdrop-filter: blur(12px);
+}
+
+.home-page__badge-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.home-page__badge-address {
+  letter-spacing: 0.03em;
+}

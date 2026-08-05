@@ -73,34 +73,18 @@
       }
     </div>
 
-    <div class="home-page__badge">
-      <i
-        class="fa-solid fa-tooth home-page__badge-icon"
-        aria-hidden="true"
-      ></i>
-      <div class="home-page__badge-text">
-        <span class="home-page__badge-address">{{ content().address }}</span>
-      </div>
-    </div>
-
-    <div class="home-page__badge">
-      <i
-        class="fa-solid fa-envelope home-page__badge-icon"
-        aria-hidden="true"
-      ></i>
-      <div class="home-page__badge-text">
-        <span class="home-page__badge-address">{{ content().email }}</span>
-      </div>
-    </div>
-    <div class="home-page__badge">
-      <i
-        class="fa-solid fa-phone home-page__badge-icon"
-        aria-hidden="true"
-      ></i>
-      <div class="home-page__badge-text">
-        <span class="home-page__badge-address">{{ content().phone }}</span>
-      </div>
-    </div>
+    <mia-badge
+      [content]="content().address"
+      [icon]="'fa-tooth'"
+    ></mia-badge>
+    <mia-badge
+      [content]="content().email"
+      [icon]="'fa-envelope'"
+    ></mia-badge>
+    <mia-badge
+      [content]="content().phone"
+      [icon]="'fa-phone'"
+    ></mia-badge>
   </div>
 
   <div class="hero-wave">
