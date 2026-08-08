@@ -6,12 +6,13 @@ import { Language } from '../../shared/enums/language.enum';
 import { selectCurrentLanguage } from '../../store/settings/settings.feature';
 import { HomePageContent } from './models/home-page-content.model';
 import { HOME_PAGE_TRANSLATIONS } from './translations/home-page.translation';
+import { WaveComponent } from './components/wave/wave-component';
 
 @Component({
   selector: 'mia-home-page',
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
-  imports: [BadgeComponent]
+  imports: [BadgeComponent, WaveComponent]
 })
 export class HomePageComponent {
   private readonly store: Store = inject(Store);
