@@ -143,73 +143,6 @@
   line-height: 1.65;
 }
 
-.home-page__features {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-
-  width: min(100%, 46rem);
-
-  border-radius: 1.75rem;
-
-  background: rgba(255, 255, 255, 0.58);
-
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-
-  border: 1px solid rgba(255, 255, 255, 0.45);
-
-  box-shadow:
-    0 25px 60px rgba(35, 18, 73, 0.08),
-    0 8px 20px rgba(35, 18, 73, 0.05);
-
-  overflow: hidden;
-}
-
-.home-page__feature {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  min-height: 8rem;
-  padding: 0.85rem 0.65rem 0.5rem 0.65rem;
-  background: transparent;
-}
-
-.home-page__feature:not(:last-child) {
-  border-right: 1px solid rgba(156, 130, 219, 0.16);
-}
-
-.home-page__feature p {
-  margin: 0;
-  color: var(--hero-text);
-  font-size: 0.92rem;
-  line-height: 1.45;
-}
-
-.home-page__feature-icon {
-  display: grid;
-  place-items: center;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  background: var(--hero-accent-soft);
-  color: #744acb;
-  box-shadow: inset 0 0 0 1px rgba(142, 106, 216, 0.1);
-}
-
-.home-page__feature-icon i {
-  display: inline-block;
-  font-family: 'Font Awesome 7 Free';
-  font-size: 1.65rem;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 900;
-  line-height: 1;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .home-page__badge i {
   display: inline-block;
   font-family: 'Font Awesome 7 Free';
@@ -332,18 +265,6 @@
     width: 30vw;
     opacity: 0.85;
   }
-
-  .home-page__features {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .home-page__feature:nth-child(2n) {
-    border-right: 0;
-  }
-
-  .home-page__feature:nth-child(-n + 2) {
-    border-bottom: 1px solid rgba(156, 130, 219, 0.16);
-  }
 }
 
 @media (max-width: 760px) {
@@ -384,32 +305,6 @@
     top: auto;
     bottom: 0;
     height: 56%;
-  }
-
-  .home-page__feature p {
-    margin: 0;
-    color: var(--hero-text);
-    font-size: 0.8rem;
-    line-height: 1.45;
-  }
-
-  // .home-page__features {
-  //   grid-template-columns: 1fr;
-  //   gap: 1rem;
-  //   background: linear-gradient(
-  //     180deg,
-  //     rgba(255, 255, 255, 0.65) 0%,
-  //     rgba(255, 255, 255, 0.45) 100%
-  //   );
-  // }
-
-  .home-page__feature {
-    min-height: auto;
-  }
-
-  .home-page__feature:not(:last-child) {
-    border-right: 0;
-    border-bottom: 1px solid rgba(156, 130, 219, 0.16);
   }
 
   .home-page__actions {

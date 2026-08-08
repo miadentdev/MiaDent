@@ -18,10 +18,10 @@ import { HomePageContent } from "../models/home-page-content.model";
       leftImageAlt: 'Д-р Миа показва детска рисунка с усмивка.',
       rightImageAlt: 'Д-р Миа се усмихва и поздравява с розови ръкавици.',
       features: [
-        { icon: 'tooth', label: 'Индивидуален подход' },
-        { icon: 'shield', label: 'Сигурност и професионализъм' },
-        { icon: 'technology', label: 'Модерни технологии' },
-        { icon: 'heart', label: 'Отговорност и внимание' }
+        { icon: 'fa-tooth', label: 'Индивидуален подход' },
+        { icon: 'fa-shield-halved', label: 'Сигурност и професионализъм' },
+        { icon: 'fa-microchip', label: 'Модерни технологии' },
+        { icon: 'fa-heart', label: 'Отговорност и внимание' }
       ]
     },
     [Language.English]: {
@@ -39,10 +39,10 @@ import { HomePageContent } from "../models/home-page-content.model";
       leftImageAlt: 'Dr. Mia holding a child drawing and smiling.',
       rightImageAlt: 'Dr. Mia smiling and greeting with pink gloves.',
       features: [
-        { icon: 'tooth', label: 'Personal approach' },
-        { icon: 'shield', label: 'Safety and professionalism' },
-        { icon: 'technology', label: 'Modern technology' },
-        { icon: 'heart', label: 'Responsibility and attention' }
+        { icon: 'fa-tooth', label: 'Personal approach' },
+        { icon: 'fa-shield-halved', label: 'Safety and professionalism' },
+        { icon: 'fa-microchip', label: 'Modern technology' },
+        { icon: 'fa-heart', label: 'Responsibility and attention' }
       ]
     }
   };

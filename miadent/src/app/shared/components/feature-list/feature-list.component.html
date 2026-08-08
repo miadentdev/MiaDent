@@ -1,0 +1,17 @@
+<div class="features-container">
+  @for (feature of features(); track feature.label) {
+    <article class="feature">
+      <div
+        class="feature-icon"
+        [attr.data-icon]="feature.icon"
+      >
+        <i
+          class="fa-solid {{ feature.icon }}"
+          aria-hidden="true"
+        ></i>
+      </div>
+
+      <p>{{ feature.label }}</p>
+    </article>
+  }
+</div>

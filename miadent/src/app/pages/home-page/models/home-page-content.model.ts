@@ -1,4 +1,4 @@
-import { HomePageFeature } from './home-page-feature.model';
+import { Feature } from '../../../shared/components/feature-list/feature.model';
 
 export interface HomePageContent {
   city: string;
@@ -14,5 +14,5 @@ export interface HomePageContent {
   secondaryCta: string;
   leftImageAlt: string;
   rightImageAlt: string;
-  features: HomePageFeature[];
+  features: Feature[];
 }
